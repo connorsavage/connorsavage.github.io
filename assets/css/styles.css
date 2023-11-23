@@ -36,6 +36,7 @@
   }
 }
 
+
 /*===== BASE =====*/
 *, ::before, ::after {
   box-sizing: border-box;
@@ -206,6 +207,11 @@ img {
 
 .home__data {
   align-self: center;
+  text-align: center; /* Centers text and inline elements */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers flex items vertically */
+  justify-content: center; /* Centers flex items horizontally */
 }
 
 .home__title {
@@ -220,6 +226,8 @@ img {
 .home__social {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
 }
 
 .home__social-icon {
@@ -233,23 +241,6 @@ img {
   color: var(--first-color);
 }
 
-.home__img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  /*padding-bottom: 82px;*/
-  padding-left: 40px;
-  width: 260px;
-}
-
-.home__blob {
-  fill: var(--first-color);
-}
-
-.home__blob-img {
-  width: 360px;
-}
-
 /*BUTTONS*/
 .button {
   display: inline-block;
@@ -261,24 +252,52 @@ img {
   transition: .3s;
 }
 
-.button:hover {
-  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 20px; /* Adjust as needed for spacing between buttons */
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* ===== ABOUT =====*/
+.button:hover {
+  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0); /* Fully transparent background */
+  transform: scale(1.1);
+}
+
+/* ===== experience =====*/
 .about__container {
   row-gap: 2rem;
   text-align: center;
+  display: flex;
+  justify-content: center; /* Centers flex items horizontally */
+  gap: 20px; /* Spacing between the boxes */
+  flex-wrap: wrap;
 }
 
-.about__subtitleL {
-  text-align: center;
-  margin-bottom: var(--mb-2);
+/* Container for each experience */
+.about__experience {
+  border: 2px solid var(--first-color); /* Outline */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+  width: 80%; /* Set a specific width or max-width */
+  background-color: rgba(255, 255, 255, 0); /* Fully transparent initially */
 }
 
-.about__subtitleR {
-  text-align: center;
-  margin-bottom: var(--mb-2);
+/* Hover effect */
+.about__experience:hover {
+  /*transform: translateY(-10px); Slightly raise the block */
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  background-color: rgba(255, 255, 255, 0.1); /* Fully transparent initially */
+}
+
+.about__subtitle {
+  text-align: left;
+  color: var(--first-color);
+  margin-bottom: 10px;
 }
 
 .about__text {
@@ -287,124 +306,53 @@ img {
   margin-left: var(--mb-2);
 }
 
-.about__job {
-  text-align: left;
-  margin-left: var(--mb-2);
-  
-}
-
 .about__date {
-  text-align: left;
-  margin-left: var(--mb-2);
-  color: grey;
   font-style: italic;
-  font-size: var(--smaller-font-size);
+  margin-bottom: var(--mb-2);
 }
 
-.about__img {
-  justify-self: center;
-}
-
-.about__img img {
-  width: 200px;
-  border-radius: .5rem;
-}
 
 
 /* ===== SKILLS =====*/
 .skills__container {
-  row-gap: 2rem;
-  text-align: center;
-}
-
-.skills__subtitle {
-  margin-bottom: var(--mb-2);
-}
-
-.skills__text {
-  margin-bottom: var(--mb-4);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
 .skills__data {
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 5px;
+  flex-basis: 100px; /* Minimum width of each skill block */
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  position: relative;
-  font-weight: var(--font-semi);
-  padding: .5rem 1rem;
-  margin-bottom: var(--mb-4);
-  border-radius: .5rem;
-  /*box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);*/
-  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.15);
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.skills__data:hover {
+  background-color: rgba(0, 0, 0, 0); /* Fully transparent background */
+  transform: scale(1.1);
+}
+
+.skills__data-med {
+  flex-basis: 180px; /* Larger base width for longer skill names */
+}
+
+.skills__data-long {
+  flex-basis: 260px; /* Larger base width for longer skill names */
 }
 
 .skills__icon {
   font-size: 2rem;
   margin-right: var(--mb-2);
-  /*color: var(--first-color);*/
-  color: rgba(94, 154, 255);
-}
-
-.skills__names {
-  display: flex;
-  align-items: center;
-}
-
-.skills__bar {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  /*background-color: var(--first-color);*/
-  background-color: rgba(94, 154, 255);
-  height: .25rem;
-  border-radius: .5rem;
-  z-index: var(--z-back);
-}
-
-.skills__html {
-  width: 95%;
-}
-
-.skills__css {
-  width: 85%;
-}
-
-.skills__js {
-  width: 65%;
-}
-
-.skills__ux {
-  width: 85%;
-}
-
-.skills__bootstrap {
-  width: 70%;
-}
-
-.skills__java {
-  width: 95%;
-}
-
-.skills__python {
-  width: 85%;
-}
-
-.skills__swift {
-  width: 75%;
-}
-
-.skills__github {
-  width: 95%;
-}
-
-.skills__adobe {
-  width: 70%;
-}
-
-
-
-.skills__img {
-  border-radius: .5rem;
+  color: var(--second-color);
+  /*color: rgba(94, 154, 255);*/
 }
 
 
@@ -439,11 +387,22 @@ img {
 .work__img {
   position: relative;
   z-index: 1;
-  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.25);
   border-radius: .5rem;
   overflow: hidden;
   height: 250px;
   opacity: 1;
+}
+
+.work__img img {
+  width: 100%; /* Ensure the image spans the full width of its container */
+  height: 100%; /* Ensure the image spans the full height of its container */
+  object-fit: cover; /* Resize the image to cover the container while preserving its aspect ratio */
+  object-position: center; /* Center the image within its container */
+  transition: opacity 0.3s ease;
+}
+
+.work__img:hover img {
+  opacity: 0; /* Reduce opacity to make the image transparent */
 }
 
 .overlay {
@@ -455,25 +414,31 @@ img {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: 1s ease;
-  background-color: rgba(0, 0, 0, 0.95);
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  text-align: center;
+  background-color: transparent; /* Ensure the background is transparent */
 }
 
 .work__img:hover .overlay {
   opacity: 1;
 }
 
-.text {
+.overlay .text {
   color: white;
   font-size: 18px;
   font-family: var(--body-font);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+  opacity: 0; /* Text is initially transparent */
+  transition: opacity 0.3s ease;
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+}
+
+.work__img:hover .overlay,
+.work__img:hover .overlay .text {
+  opacity: 1; /* Make overlay and text fully visible on hover */
 }
 
 
