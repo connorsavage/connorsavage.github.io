@@ -22,9 +22,9 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link active">&ltHome&gt</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">&ltAbout&gt</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">&ltExperience&gt</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">&ltSkills&gt</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">&ltWork&gt</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">&ltProjects&gt</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">&ltContact&gt</a></li>
                     </ul>
                 </div>
@@ -41,46 +41,62 @@
             <section class="home bd-grid" id="home">
                 <div class="home__data">
                     <h1 class="home__title">Hi,<br>I'm <span class="home__title-color"> Connor,</span><br> Web Developer & <br>Software Engineer.</h1>
-
+                    <div class="button-container">
                     <a href="#contact" class="button button--flex">
                     Contact <i class='bx bx-message button__icon'></i>
                     </a>
-                    <a href="assets/img/CSResume.pdf" class="button button--flex">
+                    <a href="assets/img/Resume.pdf" class="button button--flex">
                     Resume/CV <i class='bx bx-download button__icon'></i>
                     </a>
+                    </div>
                 </div>
 
                 <div class="home__social">
                     <a href="https://www.linkedin.com/in/connor-savage20/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
                     <a href="https://github.com/connorsavage" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                <div class="home__img">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
-                    </div>
-                </div>
+                </div>               
             </section>
 
-            <!--===== ABOUT =====-->
+            <!--===== Experience =====-->
             <section class="about section " id="about">
-                <h2 class="section-title">&ltAbout&gt</h2>
+                <h2 class="section-title">&ltExperience&gt</h2>
 
                 <div class="about__container bd-grid">
-
-                    <div>
-                        <h2 class="about__subtitleL">Who am I?</h2>
-                        <p class="about__text">A Computer Science & Interactive Media student at Loyola Marymount University. Currently located in Los Angeles working as a Software Engineer Intern at Los Angeles Department of Transportation.</p><br>
-                        <p class="about__text">Interested in the entire front-end spectrum, mobile app development, game design, animation, AI, and product development.</p><br><br>
-                    </div> 
-                    
-                    <div>
-                        <h2 class="about__subtitleR">Experience</h2>
-                        <p class="about__job">Software Engineer Intern - Los Angeles Department of Transportation</p>
-                        <p class="about__date">April 2022 - Present</p><br>
-                        <p class="about__job">Python and Java Tutor - Loyola Marymount University</p>  
-                        <p class="about__date">January 2022 - May 2022</p><br><br><br>
-                    </div> 
+                    <div class="about__experience">
+                        <h2 class="about__subtitle">NBCUniversal - Software DevOps Intern</h2>
+                        <p class="about__date">Los Angeles | April 2023 - Present</p>
+                        <p class="about__text">
+                            - Spearheaded new Privacy Platform App leveraging AWS CDK to deploy infrastructure for scalability & efficiency<br><br>
+                            - Configured AWS CloudWatch for real-time monitoring, analytics, issue detection, and performance optimization <br><br>
+                            - Engineered API endpoints for essential file operations on the LxT document/folder management platform<br><br>
+                        </p><br>
+                    </div>
+                    <div class="about__experience">
+                        <h2 class="about__subtitle">Los Angeles Department of Transportation - Software Engineer Intern</h2>
+                        <p class="about__date"> Los Angeles | March 2022 - April 2023</p>
+                        <p class="about__text">
+                            - Utilized SQL queries to analyze database differences during updates ensuring seamless data integration<br><br>
+                            - Demonstrated proficiency utilizing Azure DevOps and C# to update and refactor back-end services<br><br>
+                            - Managed the enhancement of the UI/UX for the GIS app “TEAMS” using Bootstrap for a responsive design<br><br>
+                        </p><br>
+                    </div>
+                    <div class="about__experience">
+                        <h2 class="about__subtitle">Loyola Marymount University - Computer Science Tutor</h2>
+                        <p class="about__date"> Los Angeles | Jan 2022 - Jan 2023</p>
+                        <p class="about__text">
+                            - Guided students through problem-solving complex and diverse computer science topics<br><br>
+                            - Assisted students in understanding and implementing data structures and algorithms using Java and Python<br><br>
+                        </p><br>
+                    </div>
+                    <div class="about__experience">
+                        <h2 class="about__subtitle">Loyola Marymount University - Education</h2>
+                        <p class="about__date"> Los Angeles | Aug 2020 - May 2024</p>
+                        <p class="about__text">
+                            - Bachelor of Science, Computer Science<br><br>
+                            - Minor in Interactive & Immersive Media<br><br>
+                            - 3.70 GPA<br><br>
+                        </p><br>
+                    </div>
                 </div>
             </section>
 
@@ -89,136 +105,169 @@
                 <h2 class="section-title">&ltSkills&gt</h2>
 
                 <div class="skills__container bd-grid">          
-                    <div>
                         <!--===== Left side =====-->
-                        <div class="skills__data">
-                            <div class="skills__names">
+                        <div class="skills__data skills__data-med">
                                 <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-                            </div>
-
+                                HTML5
                         </div>
 
                         <div class="skills__data">
-                            <div class="skills__names">
                                 <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
+                                CSS3
                         </div>
 
-                        <div class="skills__data">
-                            <div class="skills__names">
+                        <div class="skills__data skills__data-long">
                                 <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
+                                JAVASCRIPT
                         </div>
 
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-bootstrap skills__icon' ></i>
-                                <span class="skills__name">Bootstrap</span>
-                            </div>
-                            <div class="skills__bar skills__bootstrap">
-
-                            </div>
-
-                        </div>
-                        </div> 
-                        <!--===== Right side =====-->
-                        <div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bx-coffee skills__icon' ></i>
-                                <span class="skills__name">Java</span>
-                            </div>
-                            <div class="skills__bar skills__java">
-
-                            </div>
-
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bx-code-curly skills__icon' ></i>
-                                <span class="skills__name">Python</span>
-                            </div>
-                            <div class="skills__bar skills__python">
-
-                            </div>
-
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-apple skills__icon'></i>
-                                <span class="skills__name">Swift</span>
-                            </div>
-                            <div class="skills__bar skills__swift">
-
-                            </div>
-
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__names">
+                        <div class="skills__data skills__data-med">
                                 <i class='bx bxl-github skills__icon' ></i>
-                                <span class="skills__name">Github</span>
-                            </div>
-                            <div class="skills__bar skills__github">
-
-                            </div>
+                                GITHUB
                         </div>
 
                         <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-adobe skills__icon' ></i>
-                                <span class="skills__name">Adobe Creative Suite</span>
-                            </div>
-                            <div class="skills__bar skills__adobe">
-
-                            </div>
-
+                                <i class='bx bxl-git skills__icon'></i>
+                                GIT
                         </div>
 
-                    </div>
+                        <div class="skills__data">
+                                <i class='bx bxs-chevrons-up skills__icon'></i>
+                                JIRA
+                        </div>
 
+                        <div class="skills__data skills__data-long">
+                                <i class='bx bx-code-curly skills__icon'></i>
+                                TYPESCRIPT
+                        </div>
+
+                        <div class="skills__data">
+                                <i class='bx bx-data skills__icon'></i>
+                                SQL
+                        </div>
+
+                        <div class="skills__data">
+                                <i class='bx bx-plus skills__icon'></i>
+                                C++
+                        </div>
+
+                        <div class="skills__data">
+                                <i class='bx bx-hash skills__icon'></i>
+                                C#
+                        </div>
+
+                        <div class="skills__data">
+                                <i class='bx bxs-copyright skills__icon'></i>
+                                C
+                        </div>
+
+                        <div class="skills__data skills__data-med">
+                                <i class='bx bxl-react skills__icon'></i>
+                                REACT.JS
+                        </div>
+
+                        <div class="skills__data skills__data-med">
+                                <i class='bx bx-cloud-upload skills__icon'></i>
+                                AZURE
+                        </div>
+
+                        <div class="skills__data">
+                                <i class='bx bxl-amazon skills__icon'></i>
+                                AWS
+                        </div>
+
+                        <div class="skills__data skills__data-long">
+                                <i class='bx bxl-google skills__icon'></i>
+                                GOOGLE FIREBASE
+                        </div>
+
+                        <div class="skills__data  skills__data-long">
+                                <i class='bx bxl-javascript skills__icon'></i>
+                                NODE.JS
+                        </div>
+
+                        <div class="skills__data skills__data-med">
+                                <i class='bx bxl-figma skills__icon'></i>
+                                FIGMA
+                        </div>
+
+                        <div class="skills__data">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                UX/UI
+                        </div>
+
+                        <div class="skills__data skills__data-long">
+                                <i class='bx bxl-bootstrap skills__icon' ></i>
+                                BOOTSTRAP
+                        </div>
+                       
+                        <div class="skills__data">
+                                <i class='bx bx-coffee skills__icon' ></i>
+                                JAVA
+                        </div>
+
+                        <div class="skills__data skills__data-med">
+                                <i class='bx bx-code skills__icon' ></i>
+                                PYTHON
+                        </div>
+
+                        <div class="skills__data">
+                                <i class='bx bxl-apple skills__icon'></i>
+                                SWIFT
+                        </div>
+
+                        <div class="skills__data skills__data-long">
+                                <i class='bx bxl-adobe skills__icon' ></i>
+                                ADOBE CREATIVE SUITE
+                        </div>
                 </div>
             </section>
 
             <!--===== WORK =====-->
             <section class="work section" id="work">
-                <h2 class="section-title">&ltWork&gt</h2>
+                <h2 class="section-title">&ltProjects&gt</h2>
 
                 <div class="work__container bd-grid">
-                    <a href="https://teamsprod.azurewebsites.net/" class="work__img">
-                        <img src="assets/img/TEAMSmap.png" alt=""> 
+
+                    <a href="https://github.com/connorsavage/Blendify" class="work__img">
+                        <img src="assets/img/blendify.png" alt="">
                         <div class="overlay"> 
-                            <div class="text">LADOT Geographic Information System: "TEAMS"</div>
-                        </div>
+                        <div class="text">Blendify - Music Curation App</div>
+                    </div>
                     </a>
+
+                    <a href="https://github.com/connorsavage/AI-Chat-Bot" class="work__img">
+                        <img src="assets/img/chatbot.jpg" alt="">
+                        <div class="overlay"> 
+                        <div class="text">Speech Recognition AI Chatbot</div>
+                    </div>
+                    </a>
+
+                    <a href="https://github.com/connorsavage/Summit-Sprint-Unity" class="work__img">
+                        <img src="assets/img/summitSprint.png" alt="">
+                        <div class="overlay"> 
+                        <div class="text">Summit Sprint - Unity Endless Runner</div>
+                    </div>
+                    </a>
+
                     <a href="https://youtu.be/z7ywGTHzsRc" class="work__img">
                         <img src="assets/img/iOSapp.png" alt="">
                         <div class="overlay"> 
                             <div class="text">Google Firebase iOS Mobile Application Demo</div>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/connorsavage/SussyScript" class="work__img">
+                        <img src="assets/img/SussyScriptLogo.png" alt="">
+                        <div class="overlay"> 
+                        <div class="text">SussyScript - Custom Programming Language</div>
+                    </div>
+                    </a>
+
+                    <a href="https://teamsprod.azurewebsites.net/" class="work__img">
+                        <img src="assets/img/TEAMSmap.png" alt=""> 
+                        <div class="overlay"> 
+                            <div class="text">LADOT Geographic Information System: "TEAMS"</div>
                         </div>
                     </a>
 
